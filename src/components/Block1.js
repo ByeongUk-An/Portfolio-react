@@ -78,7 +78,6 @@ const BlockWrap = styled.div`
     justify-content: center;
     &:hover {
       background: #ffffff;
-      border-radius: 20px;
     }
   }
   .email {

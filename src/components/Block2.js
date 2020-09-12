@@ -12,6 +12,7 @@ const BlockWrap = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 40px 35px 0;
+    margin-bottom: 30px;
   }
   .headabout {
     font-size: 36px;
@@ -19,10 +20,17 @@ const BlockWrap = styled.div`
     text-underline-position: under;
     text-decoration-color: #00e274;
   }
+  .devel {
+    margin-left: 50px;
+  }
+  .aboutwrap {
+    margin-left: 20px;
+  }
   .about {
     margin-right: 10px;
   }
   .spanwrap {
+    margin-right: 10px;
     & > span {
       font-size: 20px;
     }
@@ -67,13 +75,16 @@ function Block2() {
   return (
     <BlockWrap>
       <div className="headwrap">
-        <div>
-          <h1 className="headabout">About</h1>
+        <div className="aboutwrap">
+          <h1 className="headabout">Home</h1>
         </div>
         <div className="spanwrap">
-          <span className="about">About</span>
+          <span className="about">Home</span>
           <span>Project</span>
         </div>
+      </div>
+      <div className="devel">
+        <p>안녕하세요. 끊임없이 도전하는 개발자 안병욱입니다.</p>
       </div>
       <div className="produce">아이엠그라운드자기소개하기</div>
       <div className="skillwrap">
