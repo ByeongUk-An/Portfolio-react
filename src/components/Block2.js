@@ -3,7 +3,7 @@ import styled from "styled-components";
 import RubberBand from "react-reveal/RubberBand";
 import Spin from "react-reveal/Spin";
 import Shake from "react-reveal/Shake";
-
+import { Link } from "react-router-dom";
 import {
   SiHtml5,
   SiCss3,
@@ -16,12 +16,6 @@ import {
 } from "react-icons/si";
 
 const BlockWrap = styled.div`
-  flex: 0 0 75%;
-  max-width: 75%;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #000;
-
   .headwrap {
     display: flex;
     justify-content: space-between;
@@ -50,9 +44,8 @@ const BlockWrap = styled.div`
   }
   .spanwrap {
     margin-right: 10px;
-    & > span {
-      font-size: 25px;
-    }
+    font-size: 25px;
+    color: #354457;
   }
   .hiswrap {
     width: 750px;
@@ -153,6 +146,18 @@ const BlockWrap = styled.div`
     }
   }
 `;
+const Aboutlink = styled(Link)`
+  font-size: 25px;
+  &:nth-child(1) {
+    color: #00e670;
+  }
+  &:nth-child(2) {
+    color: #354457;
+  }
+  &:hover {
+    color: #00e670;
+  }
+`;
 
 function Block2() {
   const iconsize = "60px";
@@ -163,8 +168,12 @@ function Block2() {
           <h1 className="headabout">Home</h1>
         </div>
         <div className="spanwrap">
-          <span className="about">Home</span>
-          <span>Project</span>
+          <Aboutlink to="/">
+            <span className="about">Home</span>
+          </Aboutlink>
+          <Aboutlink to="/project">
+            <span>Project</span>
+          </Aboutlink>
         </div>
       </div>
       <div className="devel">

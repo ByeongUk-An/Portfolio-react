@@ -8,8 +8,8 @@ import Fade from "react-reveal/Fade";
 
 const BlockWrap = styled.div`
   flex: 0 0 25%;
-  max-width: 80%;
-  height: 93.5%;
+  max-width: 85%;
+  height: 100%;
   background: #ffffff;
   border-radius: 12px;
   margin-right: 15px;
@@ -89,8 +89,9 @@ const BlockWrap = styled.div`
     font-size: 17px;
   }
   .emailwrap {
-    width: 170px;
-    height: 40px;
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
     background-image: linear-gradient(to right bottom, #00f260, #0575e6);
     border-radius: 20px;
     display: flex;
