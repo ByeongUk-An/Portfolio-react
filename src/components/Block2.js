@@ -262,7 +262,7 @@ function Block2() {
         </div>
       </div>
       <div className="copy">
-        <small>© Byeonguk 2020 All right reserved.</small>
+        <small>© Byeongwook 2020 All right reserved.</small>
       </div>
     </BlockWrap>
   );

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Line from "../images/Line.jpeg";
 import github from "../images/github.svg";
+import todo from "../images/todolist.jpeg";
+import git from "../images/github.jpeg";
 
 const ProjectBlock = styled.div`
   display: flex;
@@ -121,7 +123,7 @@ function ProjectWrap() {
       </div>
       <GridWrap>
         <div className="imgwrap">
-          <a href="#">
+          <a href="http://webdev.iptime.org/abw/Line/#">
             <img src={Line} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
@@ -134,11 +136,11 @@ function ProjectWrap() {
         </div>
 
         <div className="imgwrap">
-          <a href="#">
-            <img src={Line} alt="사진" className="line" />
+          <a href="https://todolist.woogi.dev/">
+            <img src={todo} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>Todo List</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
@@ -147,11 +149,11 @@ function ProjectWrap() {
         </div>
 
         <div className="imgwrap">
-          <a href="#">
-            <img src={Line} alt="사진" className="line" />
+          <a href="https://portfolio.woogi.dev/GitHub/">
+            <img src={git} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>Github Clone</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
