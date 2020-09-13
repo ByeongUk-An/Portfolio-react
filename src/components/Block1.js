@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import mypic from "../images/pic.png";
 import mypic2 from "../images/pic2.png";
 import svg1 from "../images/witch.svg";
 import svg2 from "../images/github.svg";
+import Fade from "react-reveal/Fade";
 
 const BlockWrap = styled.div`
   flex: 0 0 25%;
-  max-width: 25%;
+  max-width: 80%;
+  height: 93.5%;
   background: #ffffff;
   border-radius: 12px;
   margin-right: 15px;
@@ -102,31 +104,39 @@ const BlockWrap = styled.div`
 `;
 
 function Block1() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
   return (
-    <BlockWrap>
-      <img className="mypic" src={mypic} alt="사진" />
-      <img className="mypic2" src={mypic2} alt="로고사진" />
-      <div className="dev">
-        <span>Front-end Developer</span>
-      </div>
-      <div className="infowrap">
-        <div className="witchwrap">
-          <img className="witch" src={svg1} alt="위치로고" />
-          <p>Korea, 대구광역시</p>
-        </div>
-        <a href="https://github.com/ByeongUk-An" className="githublink">
-          Github
-          <div className="gitwrap">
-            <img className="github" src={svg2} alt="깃헙로고" />
+    <>
+      <Fade left when={show}>
+        <BlockWrap>
+          <img className="mypic" src={mypic} alt="사진" />
+          <img className="mypic2" src={mypic2} alt="로고사진" />
+          <div className="dev">
+            <span>Front-end Developer</span>
           </div>
-        </a>
-        <p className="email">quddnr005@naver.com</p>
-        <p className="cellnumber">010-6510-0166</p>
-      </div>
-      <div className="emailwrap">
-        <a href="mailto:quddnr005@naver.com">email me</a>
-      </div>
-    </BlockWrap>
+          <div className="infowrap">
+            <div className="witchwrap">
+              <img className="witch" src={svg1} alt="위치로고" />
+              <p>Korea, 대구광역시</p>
+            </div>
+            <a href="https://github.com/ByeongUk-An" className="githublink">
+              Github
+              <div className="gitwrap">
+                <img className="github" src={svg2} alt="깃헙로고" />
+              </div>
+            </a>
+            <p className="email">quddnr005@naver.com</p>
+            <p className="cellnumber">010-6510-0166</p>
+          </div>
+          <div className="emailwrap">
+            <a href="mailto:quddnr005@naver.com">email me</a>
+          </div>
+        </BlockWrap>
+      </Fade>
+    </>
   );
 }
 
