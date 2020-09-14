@@ -123,7 +123,7 @@ function ProjectWrap() {
       </div>
       <GridWrap>
         <div className="imgwrap">
-          <a href="http://webdev.iptime.org/abw/Line/#">
+          <a href="https://portfolio.woogi.dev/Line/">
             <img src={Line} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />

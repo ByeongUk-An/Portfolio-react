@@ -28,16 +28,26 @@ const BlockWrap = styled.div`
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #00e274;
+    margin-bottom: 20px;
   }
   .devel {
     margin-left: 50px;
+    margin-bottom: 50px;
+    & > h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
     & > p {
-      font-size: 22px;
+      font-size: 18px;
+      word-spacing: 2px;
       padding-left: 10px;
+      line-height: 1.3;
     }
   }
   .aboutwrap {
     margin-left: 20px;
+    margin-bottom: 15px;
   }
   .about {
     margin-right: 20px;
@@ -141,6 +151,7 @@ const BlockWrap = styled.div`
   .copy {
     text-align: center;
     font-size: 18px;
+    margin-top: 30px;
     & > small {
       margin-bottom: 20px;
     }
@@ -177,7 +188,13 @@ function Block2() {
         </div>
       </div>
       <div className="devel">
-        <p>안녕하세요. 끊임없이 도전하는 개발자 안병욱입니다.</p>
+        <h2>끊임없이 성장하는 개발자</h2>
+        <p>
+          안녕하세요. 끊임없이 공부하는 개발자 안병욱입니다. 웹은 지속적인
+          변화가 빠르게 일어나고 있습니다.
+          <br /> 하지만 저 또한 한곳에 머물지않고 꾸준히 자기계발을 통하여
+          성장하는 개발자가 되는 것이 목표입니다.
+        </p>
       </div>
       <div className="hiswrap">
         <div className="education">

@@ -22,9 +22,14 @@ const BlockWrap = styled.div`
     width: 120px;
     height: 130px;
     border-radius: 40%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .mypic2 {
     width: 300px;
+    display: block;
+    margin-bottom: 20px;
   }
   .dev {
     width: 225px;
@@ -34,21 +39,23 @@ const BlockWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    font-weight: bold;
     span {
       font-size: 18px;
     }
   }
   .infowrap {
     width: 114%;
-    height: 240px;
+    height: 260px;
     background: #dadddf;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 12px 0;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    font-weight: bold;
   }
   .witch {
     width: 25px;
