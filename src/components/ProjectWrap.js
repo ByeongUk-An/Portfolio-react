@@ -9,6 +9,7 @@ import fun from "../images/funweb.jpeg";
 import kim from "../images/kimbug.jpeg";
 import micro from "../images/micro.jpeg";
 import hanwha from "../images/hanwha.jpeg";
+import tmdb from "../images/tmdb.jpeg";
 
 const ProjectBlock = styled.div`
   display: flex;
@@ -210,6 +211,19 @@ function ProjectWrap() {
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
               <span>Hanwha</span>
+            </div>
+            <div className="overay">
+              <div>홈페이지로 이동</div>
+            </div>
+          </a>
+        </div>
+
+        <div className="imgwrap">
+          <a href="https://movieapp.woogi.dev/">
+            <img src={tmdb} alt="사진" className="line" />
+            <div className="logowrap">
+              <img className="logo" src={github} alt="로고" />
+              <span>Tmdb</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
