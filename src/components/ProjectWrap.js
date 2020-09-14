@@ -5,6 +5,9 @@ import Line from "../images/Line.jpeg";
 import github from "../images/github.svg";
 import todo from "../images/todolist.jpeg";
 import git from "../images/github.jpeg";
+import fun from "../images/funweb.jpeg";
+import kim from "../images/kimbug.jpeg";
+import micro from "../images/micro.jpeg";
 
 const ProjectBlock = styled.div`
   display: flex;
@@ -127,7 +130,7 @@ function ProjectWrap() {
             <img src={Line} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>Line</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
@@ -153,7 +156,7 @@ function ProjectWrap() {
             <img src={git} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Github Clone</span>
+              <span>Github</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
@@ -162,11 +165,11 @@ function ProjectWrap() {
         </div>
 
         <div className="imgwrap">
-          <a href="#">
-            <img src={Line} alt="사진" className="line" />
+          <a href="https://portfolio.woogi.dev/funweb/">
+            <img src={fun} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>FunWeb</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
@@ -175,11 +178,11 @@ function ProjectWrap() {
         </div>
 
         <div className="imgwrap">
-          <a href="#">
-            <img src={Line} alt="사진" className="line" />
+          <a href="https://portfolio.woogi.dev/page2/">
+            <img src={kim} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>Kimbug</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
@@ -188,11 +191,11 @@ function ProjectWrap() {
         </div>
 
         <div className="imgwrap">
-          <a href="#">
-            <img src={Line} alt="사진" className="line" />
+          <a href="http://webdev.iptime.org/Microsoft/">
+            <img src={micro} alt="사진" className="line" />
             <div className="logowrap">
               <img className="logo" src={github} alt="로고" />
-              <span>Line Clone</span>
+              <span>Microsoft</span>
             </div>
             <div className="overay">
               <div>홈페이지로 이동</div>
